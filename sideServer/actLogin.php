@@ -19,8 +19,15 @@ if($act=='login'){
 			echo'<div class="alert alert-danger">Gagal login !</div>';
 		}
 		else{
+			$level=$_SESSION['level'];
+			if($level=='admin'){
 			echo'<script>window.location.href="admin.php";</script>';
 			echo'<div class="alert alert-success">Berhasil login !</div>';
+			}
+			elseif($level=='mahasiswa'){
+				echo'<script>window.location.href="mhs.php";</script>';
+				echo'<div class="alert alert-success">Berhasil login !</div>';
+			}
 		}
 	}
 }

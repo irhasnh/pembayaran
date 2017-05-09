@@ -17,3 +17,18 @@ p.return-home {
 	background:#099;
 	color:#fff;
 }
+.affix {
+      top: 0;
+      -webkit-transition: all .5s ease-in-out;
+      transition: all .5s ease-in-out;
+      
+
+  }
+  
+  a{
+	  color:#fff;
+  }
+  
+  a:hover{
+	  color:#F1F1F1;
+  }

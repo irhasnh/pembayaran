@@ -25,7 +25,7 @@ if($act=='tambah'){
 	else{
 		$cek=$user->cekData($username);
 		if(!$cek){
-		echo'<div class="alert alert-danger">Username sudah ada yang menggunakan</div>';
+		echo'<div class="alert alert-danger">Username sudah ada yang menggunakan </div>';
 		}
 		else{
 		$simpan=$user->insertData($username,$nama, $password, $level);

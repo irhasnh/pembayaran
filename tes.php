@@ -1,8 +1,8 @@
 <?php
 include'sideServer/class.php';
-$user= new user();
-$tampil=$user->tampilPerUsername('pilopa');
-
-echo json_encode($tampil);
+$mk= new mk();
+$id=1;
+$ambil=$mk->tampilPerId($id);
+echo json_encode($ambil);
 
 ?>
